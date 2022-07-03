@@ -85,15 +85,29 @@ const Donate = () => {
                 paddingTop: "30%",
               }}
             >
-              <motion.button
-                whileHover={{ scale: 1.3 }}
-                className="btn btn-lg btn-primary"
-                onClick={() => {
-                  download("/file-download/DDSA-StMoses.pdf", "Agreement.pdf");
-                }}
-              >
-                Download
-              </motion.button>
+              {OS === "Linux aarch64" || OS === "iPhone" ? (
+                <a href="docs/DDR-StMoses.pdf">
+                  <motion.button
+                    whileHover={{ scale: 1.3 }}
+                    className="btn btn-lg btn-primary"
+                  >
+                    Download
+                  </motion.button>
+                </a>
+              ) : (
+                <motion.button
+                  whileHover={{ scale: 1.3 }}
+                  className="btn btn-lg btn-primary"
+                  onClick={() => {
+                    download(
+                      "/file-download/DDSA-StMoses.pdf",
+                      "Agreement.pdf"
+                    );
+                  }}
+                >
+                  Download
+                </motion.button>
+              )}
             </div>
             <img
               src="/images/DDA-StMoses.png"
