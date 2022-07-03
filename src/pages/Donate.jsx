@@ -86,7 +86,7 @@ const Donate = () => {
               }}
             >
               {OS === "Linux aarch64" || OS === "iPhone" ? (
-                <a href="docs/DDR-StMoses.pdf">
+                <a href="docs/DDSA-StMoses.pdf">
                   <motion.button
                     whileHover={{ scale: 1.3 }}
                     className="btn btn-lg btn-primary"
