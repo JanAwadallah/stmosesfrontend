@@ -86,7 +86,11 @@ const Footer = () => {
           Share with us the blessings and make us one more step closer to our
           goal
         </span>
-        <Button variant="outline-success" size="sm">
+        <Button
+          onClick={(e) => navigate("/donate")}
+          size="sm"
+          variant="outline-success"
+        >
           Donate
         </Button>
       </div>
