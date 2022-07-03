@@ -1,7 +1,6 @@
 {
   "name": "st-moses",
   "version": "0.1.0",
-  "homepage": "https://stmoses.oo.gd/",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
