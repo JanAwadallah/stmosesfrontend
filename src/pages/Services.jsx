@@ -9,7 +9,7 @@ const Services = () => {
     {
       id: 1,
       title: "Liturgies",
-      desc: "We have a monthly Liturgy to be held on the first Saturday of the week",
+      desc: "We have a monthly Liturgy to be held on the first Saturday of the month",
       img: "/images/stMosesChurch.jpeg",
       link: "/liturgy",
     },
