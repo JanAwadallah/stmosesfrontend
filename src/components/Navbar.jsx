@@ -26,7 +26,7 @@ const NavBar = () => {
     navigate("/");
   };
   return (
-    <Navbar bg="light" expand="lg" className="nav">
+    <Navbar collapseOnSelect bg="light" expand="lg" className="nav">
       <Container>
         <motion.div
           animate={{ x: [0, 100, 0] }}
