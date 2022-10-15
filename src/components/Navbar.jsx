@@ -33,6 +33,7 @@ const NavBar = () => {
           transition={{ ease: "easeOut", duration: 2 }}
         >
           <NavLink
+            eventKey="1"
             to="/"
             style={{
               fontWeight: "900",
@@ -64,6 +65,7 @@ const NavBar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <NavLink
+eventKey="2"
               to="/"
               className={({ isActive }) =>
                 isActive ? "nav-link active underline" : "nav-link"
@@ -80,6 +82,7 @@ const NavBar = () => {
               <FaChurch /> Services
             </NavLink>
             <NavLink
+eventKey="3"
               to="/child-safety"
               className={({ isActive }) =>
                 isActive ? "nav-link active underline" : "nav-link"
@@ -88,6 +91,7 @@ const NavBar = () => {
               <FaChild /> Child Safety
             </NavLink>
             <NavLink
+eventKey="4"
               to="/contact"
               className={({ isActive }) =>
                 isActive ? "nav-link active underline" : "nav-link"
@@ -98,6 +102,7 @@ const NavBar = () => {
             {!user ? (
               <>
                 <NavLink
+eventKey="5"
                   to="/register"
                   className={({ isActive }) =>
                     isActive ? "nav-link active underline" : "nav-link"
