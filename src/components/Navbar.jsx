@@ -63,6 +63,7 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
+<Nav.Item>
             <NavLink
 eventKey="1"
 as={Link}
@@ -72,7 +73,10 @@ as={Link}
               }
             >
               <FaHome /> Home
+
             </NavLink>
+</Nav.Item>
+<Nav.Item>
             <NavLink
 eventKey="2"
 as={Link}
@@ -82,7 +86,10 @@ as={Link}
               }
             >
               <FaChurch /> Services
+
             </NavLink>
+</Nav.Item>
+<Nav.Item>
             <NavLink
 eventKey="3"
 as={Link}
@@ -103,8 +110,11 @@ as={Link}
             >
               <FaEnvelopeOpenText /> Contact Us
             </NavLink>
+</Nav.Item>
+
             {!user ? (
               <>
+<Nav.Item>
                 <NavLink
 eventKey="5"
 as={Link}
@@ -115,6 +125,8 @@ as={Link}
                 >
                   <FaUserAlt /> Sign Up
                 </NavLink>
+</Nav.Item>
+<Nav.Item>
                 <NavLink
 eventKey="6"
 as={Link}
@@ -125,6 +137,7 @@ as={Link}
                 >
                   <FaSignInAlt /> Login
                 </NavLink>
+</Nav.Item>
               </>
             ) : (
               <div
