@@ -1,5 +1,5 @@
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
@@ -34,6 +34,7 @@ const NavBar = () => {
         >
           <NavLink
             eventKey="1"
+as={Link}
             to="/"
             style={{
               fontWeight: "900",
@@ -66,6 +67,7 @@ const NavBar = () => {
           <Nav className="ms-auto">
             <NavLink
 eventKey="2"
+as={Link}
               to="/"
               className={({ isActive }) =>
                 isActive ? "nav-link active underline" : "nav-link"
@@ -83,6 +85,7 @@ eventKey="2"
             </NavLink>
             <NavLink
 eventKey="3"
+as={Link}
               to="/child-safety"
               className={({ isActive }) =>
                 isActive ? "nav-link active underline" : "nav-link"
@@ -92,6 +95,7 @@ eventKey="3"
             </NavLink>
             <NavLink
 eventKey="4"
+as={Link}
               to="/contact"
               className={({ isActive }) =>
                 isActive ? "nav-link active underline" : "nav-link"
@@ -103,6 +107,7 @@ eventKey="4"
               <>
                 <NavLink
 eventKey="5"
+as={Link}
                   to="/register"
                   className={({ isActive }) =>
                     isActive ? "nav-link active underline" : "nav-link"
