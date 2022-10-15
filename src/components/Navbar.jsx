@@ -33,8 +33,6 @@ const NavBar = () => {
           transition={{ ease: "easeOut", duration: 2 }}
         >
           <NavLink
-            eventKey="1"
-as={Link}
             to="/"
             style={{
               fontWeight: "900",
@@ -66,7 +64,7 @@ as={Link}
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <NavLink
-eventKey="2"
+eventKey="1"
 as={Link}
               to="/"
               className={({ isActive }) =>
@@ -76,6 +74,8 @@ as={Link}
               <FaHome /> Home
             </NavLink>
             <NavLink
+eventKey="2"
+as={Link}
               to="/services"
               className={({ isActive }) =>
                 isActive ? "nav-link active underline" : "nav-link"
@@ -116,6 +116,8 @@ as={Link}
                   <FaUserAlt /> Sign Up
                 </NavLink>
                 <NavLink
+eventKey="6"
+as={Link}
                   to="/login"
                   className={({ isActive }) =>
                     isActive ? "nav-link active underline" : "nav-link"
