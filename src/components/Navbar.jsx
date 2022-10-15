@@ -26,7 +26,7 @@ const NavBar = () => {
     navigate("/");
   };
   return (
-    <Navbar collapseOnSelect bg="light" expand="lg" className="nav">
+    <Navbar bg="light" expand="lg" className="nav">
       <Container>
         <motion.div
           animate={{ x: [0, 100, 0] }}
@@ -60,7 +60,7 @@ const NavBar = () => {
           </NavLink>
         </motion.div>
 
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle collapseOnSelect aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
 <Nav.Item>
