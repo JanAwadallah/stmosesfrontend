@@ -32,7 +32,7 @@ const NavBar = () => {
           animate={{ x: [0, 100, 0] }}
           transition={{ ease: "easeOut", duration: 2 }}
         >
-          <Nav.Link
+          <NavLink
             to="/"
             style={{
               fontWeight: "900",
@@ -57,7 +57,7 @@ const NavBar = () => {
               <span style={{ fontWeight: "300" }}>Coptic Orthodox Church</span>
               <span style={{ fontWeight: "300" }}>Geelong , VIC</span>
             </div>
-          </Nav.Link>
+          </NavLink>
         </motion.div>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
