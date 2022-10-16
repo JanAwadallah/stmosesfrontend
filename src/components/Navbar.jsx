@@ -76,8 +76,8 @@ const NavBar = () => {
          </NavLink>
     </Nav.Item>
     <Nav.Item>
-         <Nav.Link
-          <Link
+         
+          <NavLink
               eventKey="2"
               as={Link}
               to="/services"
@@ -86,8 +86,8 @@ const NavBar = () => {
               }
             >
               <FaChurch /> Services
-          </Link>
-       </Nav.Link>
+       
+       </NavLink>
 </Nav.Item>
 <Nav.Item>
             <NavLink
