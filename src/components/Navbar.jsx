@@ -159,6 +159,7 @@ const NavBar = () => {
             )}
             <Button
               onClick={(e) => navigate("/donate")}
+              eventKey="7"
               size="sm"
               variant="outline-success"
             >
