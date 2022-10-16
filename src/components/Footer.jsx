@@ -47,7 +47,7 @@ const Footer = () => {
         >
           St.Moses
         </span>
-        <ul>
+        <ul onClick={() => window.scrollTo(0, 0)}>
           <li>
             <Link to="/">Home</Link>
           </li>
