@@ -60,7 +60,7 @@ const NavBar = () => {
           </NavLink>
         </motion.div>
 
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" onSelect={() => null} />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Item>
