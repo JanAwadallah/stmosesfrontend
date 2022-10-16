@@ -20,6 +20,9 @@ code {
 a.underline {
   text-decoration: underline !important;
 }
+.card-body{
+  display: grid;
+}
 @media only screen and (max-width: 600px) {
   .cards {
     display: flex;
