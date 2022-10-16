@@ -86,7 +86,7 @@ const NavBar = () => {
               }
             >
               <FaChurch /> Services
-          <Link>
+          </Link>
        </NavLink>
 </Nav.Item>
 <Nav.Item>
