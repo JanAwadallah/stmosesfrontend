@@ -79,8 +79,8 @@ const Home = () => {
             <div className="don-btn">
               <Button
                 onClick={(e) => navigate("/donate")}
-                size="sm"
-                variant="outline-success"
+                size="lg"
+                variant="success"
               >
                 Donate
               </Button>
