@@ -93,7 +93,7 @@ const Form = () => {
   };
 
   return (
-    <div className="app">
+    <>
       <form onSubmit={handleSubmit} id="form">
         <h1 style={{ fontFamily: "cursive", fontWeight: "700" }}>
           <FaEnvelopeOpenText /> Contact Us
@@ -116,7 +116,7 @@ const Form = () => {
         ))}
         <button className="btn btn-info p-1 m-1 w-100">Submit</button>
       </form>
-    </div>
+    </>
   );
 };
 
