@@ -87,7 +87,10 @@ const Footer = () => {
           goal
         </span>
         <Button
-          onClick={(e) => navigate("/donate")}
+          onClick={(e) => {
+                  navigate("/donate");
+                  window.scrollTo(0, 0);
+                }}
           size="sm"
           variant="outline-success"
         >
