@@ -63,20 +63,21 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link>
-              <NavLink
-                eventKey="1"
-                to="/"
-                className={({ isActive }) =>
-                  isActive ? "nav-link active underline" : "nav-link"
-                }
-              >
-                <FaHome /> Home
-              </NavLink>
+            <Nav.Link
+              eventKey="1"
+              as={Link}
+              to="/"
+              className={({ isActive }) =>
+                isActive ? "nav-link active underline" : "nav-link"
+              }
+            >
+              <FaHome /> Home
             </Nav.Link>
+
             <Nav.Item>
               <Nav.Link
                 eventKey="2"
+                as={Link}
                 to="/services"
                 className={({ isActive }) =>
                   isActive ? "nav-link active underline" : "nav-link"
