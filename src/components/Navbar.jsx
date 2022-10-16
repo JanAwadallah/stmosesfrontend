@@ -64,7 +64,7 @@ const NavBar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Item>
-              <Link
+              <Nav.Link
                 eventKey="1"
                 to="/"
                 className={({ isActive }) =>
@@ -72,7 +72,7 @@ const NavBar = () => {
                 }
               >
                 <FaHome /> Home
-              </Link>
+              </Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <NavLink
