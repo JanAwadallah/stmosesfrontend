@@ -47,27 +47,27 @@ const Footer = () => {
         >
           St.Moses
         </span>
-        <ul onClick={() => window.scrollTo(0, 0)}>
-          <li>
+        <ul>
+          <li  onClick={() => window.scrollTo(0, 0)}>
             <Link to="/">Home</Link>
           </li>
           <li>
             <Link to="/services">Services</Link>
           </li>
 
-          <li>
+          <li onClick={() => window.scrollTo(0, 0)}>
             <Link to="/child-safety">Child Safety</Link>
           </li>
-          <li>
+          <li onClick={() => window.scrollTo(0, 0)}>
             <Link to="/contact">Contact Us</Link>
           </li>
 
           {!user ? (
             <>
-              <li>
+              <li onClick={() => window.scrollTo(0, 0)}>
                 <Link to="/register">Sign Up</Link>
               </li>
-              <li>
+              <li onClick={() => window.scrollTo(0, 0)}>
                 <Link to="/login">Login</Link>
               </li>
             </>
