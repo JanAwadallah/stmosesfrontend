@@ -275,10 +275,10 @@ textarea:invalid[focused="true"] ~ span {
   color: #9e4962;
   font-size: 1.3rem;
 }
-#form {
+/* #form {
   width: 75%;
   min-width: 500px;
-}
+} */
 
 .home-articel {
   display: flex;
