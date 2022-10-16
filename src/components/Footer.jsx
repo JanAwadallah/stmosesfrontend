@@ -51,7 +51,7 @@ const Footer = () => {
           <li  onClick={() => window.scrollTo(0, 0)}>
             <Link to="/">Home</Link>
           </li>
-          <li>
+          <li onClick={() => window.scrollTo(0, 0)}>
             <Link to="/services">Services</Link>
           </li>
 
