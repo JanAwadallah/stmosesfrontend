@@ -89,6 +89,7 @@ const NavBar = () => {
             <Nav.Item>
               <Nav.Link
                 eventKey="3"
+                as={Link}
                 to="/child-safety"
                 className={({ isActive }) =>
                   isActive ? "nav-link active underline" : "nav-link"
@@ -100,6 +101,7 @@ const NavBar = () => {
             <Nav.Item>
               <Nav.Link
                 eventKey="4"
+                as={Link}
                 to="/contact"
                 className={({ isActive }) =>
                   isActive ? "nav-link active underline" : "nav-link"
@@ -114,6 +116,7 @@ const NavBar = () => {
                 <Nav.Item>
                   <Nav.Link
                     eventKey="5"
+                    as={Link}
                     to="/register"
                     className={({ isActive }) =>
                       isActive ? "nav-link active underline" : "nav-link"
@@ -125,6 +128,7 @@ const NavBar = () => {
                 <Nav.Item>
                   <Nav.Link
                     eventKey="6"
+                    as={Link}
                     to="/login"
                     className={({ isActive }) =>
                       isActive ? "nav-link active underline" : "nav-link"
