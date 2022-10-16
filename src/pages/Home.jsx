@@ -78,7 +78,10 @@ const Home = () => {
             </p>
             <div className="don-btn">
               <Button
-                onClick={(e) => navigate("/donate")}
+               onClick={(e) => {
+                  navigate("/donate");
+                  window.scrollTo(0, 0);
+                }}
                 size="lg"
                 variant="success"
               >
