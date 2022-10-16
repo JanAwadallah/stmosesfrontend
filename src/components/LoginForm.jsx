@@ -51,6 +51,9 @@ const LoginForm = () => {
     if (isError) {
       toast.error(message);
     }
+     if (isLoading) {
+    return <Spinner />;
+  }
     if (isSuccess || user) {
       navigate("/");
     }
@@ -60,9 +63,7 @@ const LoginForm = () => {
   const onChange = (e) => {
     setValues({ ...values, [e.target.name]: e.target.value });
   };
-  if (isLoading) {
-    return <Spinner />;
-  }
+ 
   return (
     <div className="container mt-3" style={{ maxWidth: "700px" }}>
       <form onSubmit={handleSubmit} id="form">
