@@ -63,8 +63,8 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Item>
-              <Nav.Link
+            <Nav.Link>
+              <Link
                 eventKey="1"
                 to="/"
                 className={({ isActive }) =>
@@ -72,8 +72,8 @@ const NavBar = () => {
                 }
               >
                 <FaHome /> Home
-              </Nav.Link>
-            </Nav.Item>
+              </Link>
+            </Nav.Link>
             <Nav.Item>
               <Nav.Link
                 eventKey="2"
