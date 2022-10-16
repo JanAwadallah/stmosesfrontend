@@ -72,7 +72,7 @@ const Footer = () => {
               </li>
             </>
           ) : (
-            <li onClick={handleLogout}>Logout</li>
+            <li className="pointer" onClick={handleLogout}>Logout</li>
           )}
         </ul>
       </div>
