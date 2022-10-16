@@ -26,7 +26,7 @@ const NavBar = () => {
     navigate("/");
   };
   return (
-    <Navbar bg="light" expand="lg" className="nav">
+    <Navbar collapseOnSelect={true} bg="light" expand="lg" className="nav">
       <Container>
         <motion.div
           animate={{ x: [0, 100, 0] }}
@@ -60,13 +60,13 @@ const NavBar = () => {
           </NavLink>
         </motion.div>
 
-        <Navbar.Toggle collapseOnSelect aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-<Nav.Item>
+      <Nav.Item>
             <NavLink
-eventKey="1"
-as={Link}
+              eventKey="1"
+              as={Link}
               to="/"
               className={({ isActive }) =>
                 isActive ? "nav-link active underline" : "nav-link"
@@ -74,12 +74,12 @@ as={Link}
             >
               <FaHome /> Home
 
-            </NavLink>
-</Nav.Item>
-<Nav.Item>
-            <NavLink
-eventKey="2"
-as={Link}
+         </NavLink>
+    </Nav.Item>
+    <Nav.Item>
+          <NavLink
+              eventKey="2"
+              as={Link}
               to="/services"
               className={({ isActive }) =>
                 isActive ? "nav-link active underline" : "nav-link"
