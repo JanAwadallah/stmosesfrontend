@@ -63,81 +63,80 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-      <Nav.Item>
-            <NavLink
-              eventKey="1"
-              to="/"
-              className={({ isActive }) =>
-                isActive ? "nav-link active underline" : "nav-link"
-              }
-            >
-              <FaHome /> Home
-
-         </NavLink>
-    </Nav.Item>
-    <Nav.Item>
-         
-          <NavLink
-              eventKey="2"
-              as={Link}
-              to="/services"
-              className={({ isActive }) =>
-                isActive ? "nav-link active underline" : "nav-link"
-              }
-            >
-              <FaChurch /> Services
-       
-       </NavLink>
-</Nav.Item>
-<Nav.Item>
-            <NavLink
-eventKey="3"
-as={Link}
-              to="/child-safety"
-              className={({ isActive }) =>
-                isActive ? "nav-link active underline" : "nav-link"
-              }
-            >
-              <FaChild /> Child Safety
-            </NavLink>
-            <NavLink
-eventKey="4"
-as={Link}
-              to="/contact"
-              className={({ isActive }) =>
-                isActive ? "nav-link active underline" : "nav-link"
-              }
-            >
-              <FaEnvelopeOpenText /> Contact Us
-            </NavLink>
-</Nav.Item>
+            <Nav.Item>
+              <Link
+                eventKey="1"
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? "nav-link active underline" : "nav-link"
+                }
+              >
+                <FaHome /> Home
+              </Link>
+            </Nav.Item>
+            <Nav.Item>
+              <NavLink
+                eventKey="2"
+                as={Link}
+                to="/services"
+                className={({ isActive }) =>
+                  isActive ? "nav-link active underline" : "nav-link"
+                }
+              >
+                <FaChurch /> Services
+              </NavLink>
+            </Nav.Item>
+            <Nav.Item>
+              <NavLink
+                eventKey="3"
+                as={Link}
+                to="/child-safety"
+                className={({ isActive }) =>
+                  isActive ? "nav-link active underline" : "nav-link"
+                }
+              >
+                <FaChild /> Child Safety
+              </NavLink>
+            </Nav.Item>
+            <Nav.Item>
+              <NavLink
+                eventKey="4"
+                as={Link}
+                to="/contact"
+                className={({ isActive }) =>
+                  isActive ? "nav-link active underline" : "nav-link"
+                }
+              >
+                <FaEnvelopeOpenText /> Contact Us
+              </NavLink>
+            </Nav.Item>
 
             {!user ? (
               <>
-<Nav.Item>
-                <NavLink
-eventKey="5"
-as={Link}
-                  to="/register"
-                  className={({ isActive }) =>
-                    isActive ? "nav-link active underline" : "nav-link"
-                  }
-                >
-                  <FaUserAlt /> Sign Up
-                </NavLink>
-</Nav.Item>
-<Nav.Item>
-                <NavLink
-eventKey="6"
-as={Link}
-                  to="/login"
-                  className={({ isActive }) =>
-                    isActive ? "nav-link active underline" : "nav-link"
-                  }
-                >
-                  <FaSignInAlt /> Login
-                </NavLink>
-</Nav.Item>
+                <Nav.Item>
+                  <NavLink
+                    eventKey="5"
+                    as={Link}
+                    to="/register"
+                    className={({ isActive }) =>
+                      isActive ? "nav-link active underline" : "nav-link"
+                    }
+                  >
+                    <FaUserAlt /> Sign Up
+                  </NavLink>
+                </Nav.Item>
+                <Nav.Item>
+                  <NavLink
+                    eventKey="6"
+                    as={Link}
+                    to="/login"
+                    className={({ isActive }) =>
+                      isActive ? "nav-link active underline" : "nav-link"
+                    }
+                  >
+                    <FaSignInAlt /> Login
+                  </NavLink>
+                </Nav.Item>
               </>
             ) : (
               <div
