@@ -66,7 +66,6 @@ const NavBar = () => {
       <Nav.Item>
             <NavLink
               eventKey="1"
-              as={Link}
               to="/"
               className={({ isActive }) =>
                 isActive ? "nav-link active underline" : "nav-link"
@@ -77,7 +76,8 @@ const NavBar = () => {
          </NavLink>
     </Nav.Item>
     <Nav.Item>
-          <NavLink
+         <NavLink
+          <Link
               eventKey="2"
               as={Link}
               to="/services"
@@ -86,8 +86,8 @@ const NavBar = () => {
               }
             >
               <FaChurch /> Services
-
-            </NavLink>
+          <Link>
+       </NavLink>
 </Nav.Item>
 <Nav.Item>
             <NavLink
