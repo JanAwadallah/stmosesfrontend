@@ -17,6 +17,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.pointer{
+    cursor: pointer;
+}
 a.underline {
   text-decoration: underline !important;
 }
