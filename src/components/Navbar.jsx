@@ -1,5 +1,5 @@
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
-import { NavLink, Link } from "react-router-dom";
+import { Nav.Link, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
@@ -32,7 +32,7 @@ const NavBar = () => {
           animate={{ x: [0, 100, 0] }}
           transition={{ ease: "easeOut", duration: 2 }}
         >
-          <NavLink
+          <Nav.Link
             to="/"
             style={{
               fontWeight: "900",
@@ -57,10 +57,10 @@ const NavBar = () => {
               <span style={{ fontWeight: "300" }}>Coptic Orthodox Church</span>
               <span style={{ fontWeight: "300" }}>Geelong , VIC</span>
             </div>
-          </NavLink>
+          </Nav.Link>
         </motion.div>
 
-        <Navbar.Toggle aria-controls="basic-navbar-nav" onSelect={() => null} />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Item>
@@ -75,7 +75,7 @@ const NavBar = () => {
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <NavLink
+              <Nav.Link
                 eventKey="2"
                 as={Link}
                 to="/services"
@@ -84,10 +84,10 @@ const NavBar = () => {
                 }
               >
                 <FaChurch /> Services
-              </NavLink>
+              </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <NavLink
+              <Nav.Link
                 eventKey="3"
                 as={Link}
                 to="/child-safety"
@@ -96,10 +96,10 @@ const NavBar = () => {
                 }
               >
                 <FaChild /> Child Safety
-              </NavLink>
+              </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <NavLink
+              <Nav.Link
                 eventKey="4"
                 as={Link}
                 to="/contact"
@@ -108,13 +108,13 @@ const NavBar = () => {
                 }
               >
                 <FaEnvelopeOpenText /> Contact Us
-              </NavLink>
+              </Nav.Link>
             </Nav.Item>
 
             {!user ? (
               <>
                 <Nav.Item>
-                  <NavLink
+                  <Nav.Link
                     eventKey="5"
                     as={Link}
                     to="/register"
@@ -123,10 +123,10 @@ const NavBar = () => {
                     }
                   >
                     <FaUserAlt /> Sign Up
-                  </NavLink>
+                  </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <NavLink
+                  <Nav.Link
                     eventKey="6"
                     as={Link}
                     to="/login"
@@ -135,7 +135,7 @@ const NavBar = () => {
                     }
                   >
                     <FaSignInAlt /> Login
-                  </NavLink>
+                  </Nav.Link>
                 </Nav.Item>
               </>
             ) : (
