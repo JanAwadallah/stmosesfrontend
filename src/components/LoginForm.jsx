@@ -19,30 +19,6 @@ const LoginForm = () => {
     password: "",
   });
 
-  const inputs = [
-    {
-      id: 1,
-      name: "email",
-      type: "email",
-      placeholder: "Email",
-      errorMessage: "It should be a valid email address!",
-      label: "Email",
-      required: true,
-    },
-    {
-      id: 2,
-      name: "password",
-      type: "password",
-      placeholder: "Password",
-      label: "Password",
-      pattern: `^(?=.*[0-9])(?=.*[a-zA-Z])[a-zA-Z0-9!@#$%^&*]{8,20}$`,
-
-      errorMessage:
-        "Password has to be 8-20 characters long with at least one letter and one digit - (Special characters are allowed)!",
-      required: true,
-    },
-  ];
-
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(login(values));
@@ -89,8 +65,6 @@ const LoginForm = () => {
       name= "password"
       type= "password"
       placeholder="Password"
-      pattern="`^(?=.*[0-9])(?=.*[a-zA-Z])[a-zA-Z0-9!@#$%^&*]{8,20}$`"
-      errorMessage= "Password has to be 8-20 characters long with at least one letter and one digit - (Special characters are allowed)!"
       label= "Password"
       required
             onChange={onChange}
