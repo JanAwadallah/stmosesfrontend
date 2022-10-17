@@ -4,6 +4,7 @@ import ArticleCard from "../components/ArticleCard";
 import Slider from "../components/Slider";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
+import Spinner from "../components/Spinner";
 
 const Home = () => {
   const navigate = useNavigate();
