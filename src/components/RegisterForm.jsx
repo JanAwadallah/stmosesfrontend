@@ -238,7 +238,7 @@ const RegisterForm = () => {
           <FormInput
             key={input.id}
             {...input}
-            value={values[input.name]!="password"&&values[input.name]}
+            value={values[input.name]}
             onChange={onChange}
           />
         ))}
