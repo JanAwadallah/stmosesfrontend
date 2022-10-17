@@ -1,10 +1,11 @@
 import React from "react";
+import SpinnerComp from 'react-bootstrap/Spinner';
 
 const Spinner = () => {
   return (
-    <div className="loadingSpinnerContainer">
-      <div className="loadingSpinner"></div>
-    </div>
+    <SpinnerComp animation="border" role="status">
+      <span className="visually-hidden">Loading...</span>
+    </SpinnerComp>
   );
 };
 
