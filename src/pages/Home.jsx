@@ -4,7 +4,6 @@ import ArticleCard from "../components/ArticleCard";
 import Slider from "../components/Slider";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
-import Spinner from "../components/Spinner";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -30,7 +29,6 @@ const Home = () => {
       className="container mt-3"
       style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
     >
-      <Spinner />
       <div id="welcome" className="fs-4">
         {welcome}
       </div>
