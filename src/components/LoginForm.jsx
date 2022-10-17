@@ -74,14 +74,28 @@ const LoginForm = () => {
           Please login. Not a member yet! No problem, just{" "}
           {<Link to="/register">Register</Link>}
         </p>
-        {inputs.map((input) => (
+       
           <FormInput
-            key={input.id}
-            {...input}
+      name= "email"
+      type= "email"
+      placeholder="Email"
+      errorMessage="It should be a valid email address!"
+      label= "Email"
+      required= true
             value={values[input.name]}
             onChange={onChange}
           />
-        ))}
+                  <FormInput
+      name= "password"
+      type= "password"
+      placeholder="Password"
+      pattern=`^(?=.*[0-9])(?=.*[a-zA-Z])[a-zA-Z0-9!@#$%^&*]{8,20}$`
+      errorMessage= "Password has to be 8-20 characters long with at least one letter and one digit - (Special characters are allowed)!"
+      label= "Password",
+      required= true,
+            onChange={onChange}
+          />
+
         <button className="btn btn-info p-1 m-1 w-100">Login</button>
       </form>
     </div>
