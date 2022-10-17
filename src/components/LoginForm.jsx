@@ -81,7 +81,7 @@ const LoginForm = () => {
       placeholder="Email"
       errorMessage="It should be a valid email address!"
       label= "Email"
-      required= true
+      required
             value={values[input.name]}
             onChange={onChange}
           />
