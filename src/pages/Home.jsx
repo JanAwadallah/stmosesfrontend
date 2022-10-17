@@ -32,7 +32,7 @@ const Home = () => {
       <div id="welcome" className="fs-4">
         {welcome}
       </div>
-      
+      <Slider />
       <div
         className="my-5 cards"
         style={{ display: "flex", justifyContent: "center", width: "90%" }}
