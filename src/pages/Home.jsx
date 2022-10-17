@@ -22,7 +22,7 @@ const Home = () => {
 
   useEffect(() => {
     greating(user);
-  }, [user]);
+  }, []);
 
   return (
     <div
