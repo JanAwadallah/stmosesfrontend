@@ -89,7 +89,7 @@ const LoginForm = () => {
       name= "password"
       type= "password"
       placeholder="Password"
-      pattern=`^(?=.*[0-9])(?=.*[a-zA-Z])[a-zA-Z0-9!@#$%^&*]{8,20}$`
+      pattern="`^(?=.*[0-9])(?=.*[a-zA-Z])[a-zA-Z0-9!@#$%^&*]{8,20}$`"
       errorMessage= "Password has to be 8-20 characters long with at least one letter and one digit - (Special characters are allowed)!"
       label= "Password"
       required
