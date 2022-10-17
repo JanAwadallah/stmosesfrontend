@@ -157,17 +157,15 @@ const NavBar = () => {
                 </span>
               </div>
             )}
-            <Nav.Link
-              as={Link}
-              to="/donate"
+           <Button
+              onClick={(e) => navigate("/donate")}
               eventKey="7"
               size="sm"
               variant="outline-success"
               style={{borderRadius:"50%"}}
-              className="btn btn-outline-success"
             >
               Donate
-            </Nav.Link>
+            </Button>
           </Nav>
         </Navbar.Collapse>
       </Container>
