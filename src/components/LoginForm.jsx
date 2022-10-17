@@ -82,7 +82,7 @@ const LoginForm = () => {
       errorMessage="It should be a valid email address!"
       label= "Email"
       required
-            value={values[input.name]}
+            value=values[email]
             onChange={onChange}
           />
                   <FormInput
