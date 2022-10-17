@@ -21,6 +21,7 @@ const Footer = () => {
     dispatch(logout());
     dispatch(reset());
     navigate("/");
+    window.scrollTo(0, 0);
   };
   return (
     <div className="footer-container">
