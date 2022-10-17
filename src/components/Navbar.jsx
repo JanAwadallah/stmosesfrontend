@@ -162,6 +162,7 @@ const NavBar = () => {
               eventKey="7"
               size="sm"
               variant="outline-success"
+              style={{borderRadius:"50%"}}
             >
               Donate
             </Button>
