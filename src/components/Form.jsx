@@ -114,7 +114,7 @@ const Form = () => {
             onChange={onChange}
           />
         ))}
-        <button style={{maxWidth:"700px", margin:"0px auto"}} className="btn btn-info p-1 m-1 w-100">Submit</button>
+       <div style={{maxWidth:"700px", margin:"0px auto"}}> <button className="btn btn-info p-1 m-1 w-100">Submit</button></div>
       </form>
     </>
   );
