@@ -45,7 +45,7 @@ const Home = () => {
         <ArticleCard
           title="Article-2"
           text="Some abstract text from the database"
-          img="http://becomeorthodox.org/wp-content/uploads/2016/06/img_3338-2-1200x800.jpg"
+          img="https://photos.app.goo.gl/aBL5qYg4ZteGjv1e6"
         />
         <ArticleCard
           title="Article-3"
