@@ -45,7 +45,7 @@ const Home = () => {
         <ArticleCard
           title="Article-2"
           text="Some abstract text from the database"
-          img="https://photos.app.goo.gl/aBL5qYg4ZteGjv1e6"
+          img="https://i.ibb.co/Wk9LSYd/article-2.jpg"
         />
         <ArticleCard
           title="Article-3"
